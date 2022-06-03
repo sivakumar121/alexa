@@ -43,8 +43,8 @@ def take_command():
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()
-            if 'saketha' in command:
-                command = command.replace('siri', '')
+            if 'alexa' in command:
+                command = command.replace('alexa', '')
                 print(command)
 
     except:
@@ -52,7 +52,7 @@ def take_command():
     return command
 
 
-def run_saketha():
+def run_sak():
     command = take_command()
     print(command)
     if 'play' in command:
@@ -78,4 +78,4 @@ def run_saketha():
 
 
 while True:
-    run_saketha()
+    run_sak()
